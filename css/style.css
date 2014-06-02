@@ -119,12 +119,64 @@ header .search {
 /*-----------------------------------------------*/
 
 /*------------------ Navigation -----------------*/
+nav {
+    width: 200px;
+    background: #1F282D;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px 0;
+}
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
 /*-----------------------------------------------*/
 
 /*-------------------- Lists --------------------*/
+.menu,
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .menu > li > span, .menu ul a {
+        display: inline-block;
+        padding: 13px 30px;
+        width: 140px;
+    }
+
+    .menu .active, .menu ul li:hover {
+        background: #2F373C;
+    }
+
+    .menu > li > span {
+        color: #3C4D57;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+        .menu a span {
+            display: inline-block;
+            float: right;
+            background: #E76049;
+            border-radius: 5px;
+            padding: 3px 6px;
+        }
+
+        .menu > li:nth-child(2) a span {
+            background: #3B454B;
+        }
+
+        .menu .fa {
+            position: relative;
+            bottom: -1px;
+            font-size: 1.4em;
+            margin-right: 7px;
+        }
+
+        .menu .cel { color: #F6D346; }
+        .menu .des { color: #E25E48; }
+        .menu .par { color: #2EAF95; }
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
@@ -133,10 +185,13 @@ header .search {
     position: relative;
 }
 
-.add-entry:link,    .panel a:link,
-.add-entry:visited, .panel a:visited,
-.add-entry:hover,   .panel a:hover,
-.add-entry:active,  .panel a:active  { color: #fff; }
+.add-entry:link,    .panel a:link,      nav a:link,
+.add-entry:visited, .panel a:visited,   nav a:visited,
+.add-entry:hover,   .panel a:hover,     nav a:hover,
+.add-entry:active,  .panel a:active,    nav a:active  {
+    color: #fff;
+    text-decoration: none;
+}
 
 
 /*-----------------------------------------------*/
