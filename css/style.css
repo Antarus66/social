@@ -1,21 +1,146 @@
 /*
   Structure (layout)
   Header
-  Nav
   Search
+  Navigation
   Headings
   Lists
   Forms
+    Forms
+    Inputs
+    Buttons
   Links
   Misc
-
-
-  Layout
-  Base
-    Headings
-    Tables
-  Forms
-    Buttons
-  Header
-  Sidebar
 */
+
+/*-------------   Structure (layout) ------------*/
+html {
+    background: #1B3B64;
+    font-size: 100.01%;
+}
+
+body {
+    background: #fff;
+    border-radius: 5px;
+    font: 62.5% Arial Helvetica, sans-serif;
+    margin: 80px auto;
+    width: 1254px;
+}
+/*-----------------------------------------------*/
+
+/*------------------- Header --------------------*/
+header {
+    background: #161D20;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    line-height: 84px;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .add-entry,
+    .panel {
+        float: right;
+        height: 84px;
+    }
+
+    .add-entry {
+        background: #E76049;
+        font-size: 4.2em;
+        text-align: center;
+        text-decoration: none;
+        width: 84px;
+    }
+
+    .panel {
+        float: right;
+        font-size: 1.5em;
+        margin-right: 30px;
+    }
+
+        .panel span {
+            display: block;
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 17px;
+            background: #2EB398;
+            font-size: 0.6em;
+            z-index: 2;
+        }
+
+/*-----------------------------------------------*/
+
+/*------------------- Search --------------------*/
+.search {
+    text-align: center;
+    width: 200px;
+}
+    .search span {
+        display: inline-block;
+        line-height: 1em;
+    }
+
+    .search input {
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1.3em;
+        font-style: italic;
+        outline: none;
+        padding: 2px 0;
+        width: 120px;
+    }
+
+    .search button {
+        position: relative;
+        top: -3px;
+        background: none;
+        border: none;
+        font-size: 1.2em;
+        padding: 3px 0;
+    }
+
+header .search {
+    background: #2EB398;
+}
+
+    header .search span {
+        border-bottom: 2px solid #fff;
+    }
+
+        header .search input::-webkit-input-placeholder { color: #fff; }
+        header .search input:-moz-placeholder { color: #fff; }
+
+/*-----------------------------------------------*/
+
+/*------------------ Navigation -----------------*/
+/*-----------------------------------------------*/
+
+/*------------------ Headings -------------------*/
+/*-----------------------------------------------*/
+
+/*-------------------- Lists --------------------*/
+/*-----------------------------------------------*/
+
+/*-------------------- Links --------------------*/
+.panel a {
+    padding: 15px;
+    position: relative;
+}
+
+.add-entry:link,    .panel a:link,
+.add-entry:visited, .panel a:visited,
+.add-entry:hover,   .panel a:hover,
+.add-entry:active,  .panel a:active  { color: #fff; }
+
+
+/*-----------------------------------------------*/
+
+/*-------------------- Misc ---------------------*/
+/*-----------------------------------------------*/
+
