@@ -54,23 +54,38 @@ header {
 
     .panel {
         float: right;
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-right: 30px;
+
     }
+
+
+        .panel a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            padding: 2px;
+            margin: 0 15px;
+            position: relative;
+        }
 
         .panel span {
             display: block;
             position: absolute;
-            top: 12px;
-            right: 12px;
+            top: -7px;
+            right: -7px;
             width: 17px;
             height: 17px;
             border-radius: 50%;
             text-align: center;
             line-height: 17px;
             background: #2EB398;
-            font-size: 0.6em;
             z-index: 2;
+            font-size: 0.9em;
         }
 
 /*-----------------------------------------------*/
@@ -115,7 +130,6 @@ header .search {
 
         header .search input::-webkit-input-placeholder { color: #fff; }
         header .search input:-moz-placeholder { color: #fff; }
-
 /*-----------------------------------------------*/
 
 /*------------------ Navigation -----------------*/
@@ -180,10 +194,6 @@ nav {
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
-.panel a {
-    padding: 15px;
-    position: relative;
-}
 
 .add-entry:link,    .panel a:link,      nav a:link,
 .add-entry:visited, .panel a:visited,   nav a:visited,
