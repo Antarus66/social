@@ -84,10 +84,15 @@ body {
     width: 1254px;
 }
 
+nav,
+aside,
+main {
+    font-size: 1.2em;
+}
+
 nav {
     width: 200px;
     float: left;
-    font-size: 1.2em;
     color: #fff;
     padding: 10px 0;
 }
@@ -108,12 +113,18 @@ main {
 
 /*------------------- Search --------------------*/
 .search {
+
     text-align: center;
-    width: 200px;
+    width: 140px;
+    padding: 0 30px;
 }
+
     .search span {
         display: inline-block;
         line-height: 1em;
+        margin-bottom: -0.65em;
+        width: 100%;
+        text-align: left;
     }
 
     .search input {
@@ -124,12 +135,11 @@ main {
         font-style: italic;
         outline: none;
         padding: 2px 0;
-        width: 120px;
+        width: 85%;
     }
 
     .search button {
-        position: relative;
-        top: -3px;
+        float: right;
         background: none;
         border: none;
         font-size: 1.2em;
@@ -146,6 +156,21 @@ header .search {
 
         header .search input::-webkit-input-placeholder { color: #fff; }
         header .search input:-moz-placeholder { color: #fff; }
+
+
+aside .search {
+    color: #C4CCD8;
+    font-size: 0.86em;
+    padding: 27px 30px;
+    width: 165px;
+}
+
+    aside .search span {
+        border-bottom: 2px solid #C4CCD8;
+    }
+
+        aside .search input::-webkit-input-placeholder { color: #C4CCD8; }
+        aside .search input:-moz-placeholder { color: #C4CCD8; }
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
