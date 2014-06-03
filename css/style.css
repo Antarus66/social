@@ -78,16 +78,18 @@ html {
     font-size: 100.01%;
 }
 
-body {
+.layout {
     font: 62.5% Arial Helvetica, sans-serif;
     margin: 80px auto;
     width: 1254px;
+    overflow: hidden;
 }
 
 nav,
 aside,
 main {
     font-size: 1.2em;
+    height: 900px;
 }
 
 nav {
@@ -107,7 +109,7 @@ main {
     border-left: 200px solid #1F282D;
     border-right: 225px solid #EAEDF1;
     border-radius: 0 0 5px 5px;
-    min-height: 900px;
+    height: 1200px;
 }
 /*-----------------------------------------------*/
 
@@ -187,15 +189,9 @@ aside .search {
     .menu > li > span, .menu ul a {
         display: inline-block;
         padding: 13px 30px;
-        width: 140px;
-    }
-
-    .menu .active, .menu ul li:hover {
-        background: #2F373C;
     }
 
     .menu > li > span {
-        color: #3C4D57;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -212,28 +208,106 @@ aside .search {
             background: #3B454B;
         }
 
-        .menu .fa {
-            position: relative;
-            bottom: -1px;
-            font-size: 1.4em;
-            margin-right: 7px;
-        }
-
         .menu .cel { color: #F6D346; }
         .menu .des { color: #E25E48; }
         .menu .par { color: #2EAF95; }
+
+/* Nav menu */
+    nav .menu > li > span,
+    nav .menu ul a {
+        width: 140px;
+    }
+
+    nav .menu > li > span {
+        color: #3C4D57;
+    }
+
+    nav .menu .active,
+    nav .menu ul li:hover {
+        background: #2F373C;
+    }
+
+    nav .menu i {
+        position: relative;
+        bottom: -1px;
+        font-size: 1.4em;
+        margin-right: 7px;
+    }
+
+/* Aside menu */
+    aside .menu > li > span { width: 165px; }
+
+    aside .menu ul a { width: 135px; }
+
+    /* Contact on hover */
+    aside .menu ul li a:hover {
+        background: #ddd;
+    }
+
+    /* Elements of first-level menu */
+    aside .menu > li > span {
+        color: #6A7686;
+        font-size: 0.9em;
+        text-align: right;
+    }
+
+    aside .menu li {
+        position: relative;
+    }
+
+    aside .menu ul a {
+        padding: 12px 30px 12px 60px;
+    }
+
+    /* Colored or grey circles - online indicators */
+    aside .menu ul li:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        right: 30px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #C4CCD8;
+    }
+
+    aside .menu ul .online-now:after { background: #2EB398; }
+    aside .menu ul .online-before:after { background: #F5B041; }
+    aside .menu ul .online-long:after { background: #E76049; }
+
+    /* Litle avatar 22*22 */
+    aside .menu img {
+        position: absolute;
+        top: 50%;
+        margin-top: -11px;
+        left: 30px;
+    }
+
+    aside .menu span i {
+        display: inline-block;
+        border: 2px solid #6A7686;
+        border-radius: 50%;
+        font-size: 0.8em;
+        margin-left: 5px;
+        padding: 1px 2px 2px 2px;
+    }
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
 
-.add-entry:link,    .panel a:link,      nav a:link,
-.add-entry:visited, .panel a:visited,   nav a:visited,
-.add-entry:hover,   .panel a:hover,     nav a:hover,
-.add-entry:active,  .panel a:active,    nav a:active  {
+.add-entry:link,    .panel a:link,      .menu a:link,
+.add-entry:visited, .panel a:visited,   .menu a:visited,
+.add-entry:hover,   .panel a:hover,     .menu a:hover,
+.add-entry:active,  .panel a:active,    .menu a:active  {
     color: #fff;
     text-decoration: none;
 }
 
+aside .menu a:link,
+aside .menu a:visited,
+aside .menu a:hover,
+aside .menu a:active { color: #929ead; }
 
 /*-----------------------------------------------*/
 
