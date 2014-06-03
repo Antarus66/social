@@ -1,8 +1,7 @@
 /*
-  Structure (layout)
   Header
+  Structure (layout)
   Search
-  Navigation
   Headings
   Lists
   Forms
@@ -12,21 +11,6 @@
   Links
   Misc
 */
-
-/*-------------   Structure (layout) ------------*/
-html {
-    background: #1B3B64;
-    font-size: 100.01%;
-}
-
-body {
-    background: #fff;
-    border-radius: 5px;
-    font: 62.5% Arial Helvetica, sans-serif;
-    margin: 80px auto;
-    width: 1254px;
-}
-/*-----------------------------------------------*/
 
 /*------------------- Header --------------------*/
 header {
@@ -38,56 +22,88 @@ header {
     width: 100%;
 }
 
-    .add-entry,
-    .panel {
-        float: right;
-        height: 84px;
-    }
+.add-entry,
+.panel {
+    float: right;
+    height: 84px;
+}
 
-    .add-entry {
-        background: #E76049;
-        font-size: 4.2em;
-        text-align: center;
-        text-decoration: none;
-        width: 84px;
-    }
+.add-entry {
+    background: #E76049;
+    font-size: 4.2em;
+    text-align: center;
+    text-decoration: none;
+    width: 84px;
+}
 
-    .panel {
-        float: right;
-        font-size: 1.3em;
-        margin-right: 30px;
+.panel {
+    float: right;
+    font-size: 1.3em;
+    margin-right: 30px;
 
-    }
+}
 
+.panel a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0 15px;
+    position: relative;
+}
 
-        .panel a {
-            display: inline-block;
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            padding: 2px;
-            margin: 0 15px;
-            position: relative;
-        }
+.panel span {
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 17px;
+    background: #2EB398;
+    z-index: 2;
+    font-size: 0.9em;
+}
+/*-----------------------------------------------*/
 
-        .panel span {
-            display: block;
-            position: absolute;
-            top: -7px;
-            right: -7px;
-            width: 17px;
-            height: 17px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 17px;
-            background: #2EB398;
-            z-index: 2;
-            font-size: 0.9em;
-        }
+/*-------------   Structure (layout) ------------*/
+html {
+    background: #1B3B64;
+    font-size: 100.01%;
+}
 
+body {
+    font: 62.5% Arial Helvetica, sans-serif;
+    margin: 80px auto;
+    width: 1254px;
+}
+
+nav {
+    width: 200px;
+    float: left;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px 0;
+}
+
+aside {
+    float: right;
+    width: 225px;
+}
+
+main {
+    background: #fff;
+    border-left: 200px solid #1F282D;
+    border-right: 225px solid #EAEDF1;
+    border-radius: 0 0 5px 5px;
+    min-height: 900px;
+}
 /*-----------------------------------------------*/
 
 /*------------------- Search --------------------*/
@@ -130,16 +146,6 @@ header .search {
 
         header .search input::-webkit-input-placeholder { color: #fff; }
         header .search input:-moz-placeholder { color: #fff; }
-/*-----------------------------------------------*/
-
-/*------------------ Navigation -----------------*/
-nav {
-    width: 200px;
-    background: #1F282D;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 10px 0;
-}
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
