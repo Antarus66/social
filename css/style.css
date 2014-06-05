@@ -84,40 +84,10 @@ body {
     width: 1255px;
 }
 
-/* Imitation of columns by Mattew James Taylor
-http://matthewjamestaylor.com/blog/equal-height-columns-cross-browser-css-no-hacks */
-.wrap-aside,
-.wrap2,
-.wrap-nav {
-    width: 100%;
-    position: relative;
-}
-
-.wrap-aside {
-    float: left;
-    overflow: hidden;
-    border: 3px dotted green;
-    background: #EAEDF1;
-}
-
-.wrap2 {
-    background: red;
-    right: 225px;
-}
-
-.wrap-nav {
-    background: #1F282D;
-    right: 830px;
-}
-
-
 nav,
 aside,
 main {
     font-size: 1.2em;
-    position: relative;
-    left: 1055px;
-
 }
 
 nav,
@@ -138,14 +108,9 @@ aside {
 }
 
 main {
-    /*background: #fff;*/
-    margin-left: 200px;
-    margin-right: 225px;
-    /*
+    background: #fff;
     border-left: 200px solid #1F282D;
     border-right: 225px solid #EAEDF1;
-    border-radius: 0 0 5px 5px;
-    */
     height: 1200px;
     padding: 15px;
 }
