@@ -208,7 +208,7 @@ aside .search {
         font-weight: bold;
     }
 
-        .menu ul a { padding: 12px 30px 12px 60px; }
+        .menu ul a { padding: 12px 45px 12px 60px; }
 
             .menu ul a span {
                 position: absolute;
@@ -249,7 +249,7 @@ aside .search {
 /* Nav menu */
     nav .menu > li > span,
     nav .menu ul a {
-        width: 110px;
+        width: 95px;
     }
 
     nav .menu > li > span {
@@ -264,7 +264,7 @@ aside .search {
 /* Aside menu */
     aside .menu > li > span { width: 165px; }
 
-    aside .menu ul a { width: 135px; }
+    aside .menu ul a { width: 120px; }
 
     /* Contact on hover */
     aside .menu ul li a:hover {
