@@ -84,6 +84,10 @@ body {
     width: 1255px;
 }
 
+.layout {
+    overflow: hidden;
+}
+
 nav,
 aside,
 main {
