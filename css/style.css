@@ -220,7 +220,7 @@ aside .search {
 
                 /* Litle avatar 22*22 or icon*/
                 .menu img,
-                .menu .fa {
+                .menu ul li .fa {
                     position: absolute;
                     top: 50%;
                     left: 30px;
@@ -228,7 +228,10 @@ aside .search {
                 }
 
                 .menu img { margin-top: -11px; }
-                .menu .fa { margin-top: -9px; }
+                .menu ul li .fa {
+                    font-size: 1.4em;
+                    margin-top: -9px;
+                }
 
 
             .menu .cel { color: #F6D346; }
@@ -248,13 +251,6 @@ aside .search {
     nav .menu .active,
     nav .menu ul li:hover {
         background: #2F373C;
-    }
-
-    nav .menu i {
-        position: relative;
-        bottom: -1px;
-        font-size: 1.4em;
-        margin-right: 7px;
     }
 
 /* Aside menu */
