@@ -107,6 +107,7 @@ nav {
 }
 
 aside {
+    color: #929ead;
     float: right;
     width: 225px;
 }
@@ -179,7 +180,7 @@ aside .search {
         border-bottom: 2px solid #C4CCD8;
     }
 
-        aside .search input { color: #C4CCD8; }
+        aside .search input { color: #929ead; }
 
         aside .search input::-webkit-input-placeholder { color: #C4CCD8; }
         aside .search input:-moz-placeholder { color: #C4CCD8; }
@@ -328,7 +329,6 @@ aside .menu a:active { color: #929ead; }
 
 /*-------------------- Misc ---------------------*/
 article {
-    background: #EAEDF1;
     border: 2px solid #EAEDF1;
     border-radius: 5px;
     display: inline-block;
