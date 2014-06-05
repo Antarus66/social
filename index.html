@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+    <div class="layout">
         <header>
             <a href="#" class="add-entry">+</a>
             <div class="panel">
@@ -30,42 +31,155 @@
                 </a>
                 -->
             </div>
-            <form class="search" action="#" method="get">
+            <form name="site-search" class="search" action="#" method="get">
                 <span>
-                    <input type="text" name="query" placeholder="Search all...">
                     <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+                    <input type="text" name="query" placeholder="Search all...">
+
                 </span>
             </form>
 
         </header>
 
-        <nav>
-            <ul class="menu">
-                <li><span>Main</span>
-                    <ul>
-                        <li class="active"><a href="#"><i class="fa fa-map-marker fa-fw"></i> Discover</a></li>
-                        <li><a href="#"><span>5</span><i class="fa fa-calendar fa-fw"></i> Events</a></li>
-                        <li><a href="#"><i class="fa fa-group fa-fw"></i> Friends</a></li>
-                        <li><a href="#"><i class="fa fa-photo fa-fw"></i> Photos</a></li>
-                        <li><a href="#"><i class="fa fa-video-camera fa-fw"></i> Videos</a></li>
-                    </ul>
-                </li>
-                <li><span>Recent</span>
-                    <ul>
-                        <li><a href="#"><span>3</span><i class="fa fa-building fa-fw"></i> Hotels</a></li>
-                        <li><a href="#"><i class="fa fa-sun-o fa-fw"></i> Vacantions</a></li>
-                        <li><a href="#"><i class="fa fa-coffee fa-fw"></i> Restaurants</a></li>
-                        <li><a href="#"><i class="fa fa-anchor fa-fw"></i> Cruises</a></li>
-                    </ul>
-                </li>
-                <li><span>Groups</span>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-circle-thin fa-fw cel"></i> Celebrities</a></li>
-                        <li><a href="#"><i class="fa fa-circle-thin fa-fw des"></i> Designers</a></li>
-                        <li><a href="#"><i class="fa fa-circle-thin fa-fw par"></i> Party Trips</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="menu">
+                    <li><span>Main</span>
+                        <ul>
+                            <li class="active"><a href="#"><i class="fa fa-map-marker fa-fw"></i> Discover</a></li>
+                            <li><a href="#"><span>5</span><i class="fa fa-calendar fa-fw"></i> Events</a></li>
+                            <li><a href="#"><i class="fa fa-group fa-fw"></i> Friends</a></li>
+                            <li><a href="#"><i class="fa fa-photo fa-fw"></i> Photos</a></li>
+                            <li><a href="#"><i class="fa fa-video-camera fa-fw"></i> Videos</a></li>
+                        </ul>
+                    </li>
+                    <li><span>Recent</span>
+                        <ul>
+                            <li><a href="#"><span>3</span><i class="fa fa-building fa-fw"></i> Hotels</a></li>
+                            <li><a href="#"><i class="fa fa-sun-o fa-fw"></i> Vacantions</a></li>
+                            <li><a href="#"><i class="fa fa-coffee fa-fw"></i> Restaurants</a></li>
+                            <li><a href="#"><i class="fa fa-anchor fa-fw"></i> Cruises</a></li>
+                        </ul>
+                    </li>
+                    <li><span>Groups</span>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-circle-thin fa-fw cel"></i> Celebrities</a></li>
+                            <li><a href="#"><i class="fa fa-circle-thin fa-fw des"></i> Designers</a></li>
+                            <li><a href="#"><i class="fa fa-circle-thin fa-fw par"></i> Party Trips</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <aside>
+                <form name="user-search" class="search" action="#" method="get">
+                    <span>
+                        <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+                        <input type="text" name="query" placeholder="Chat with...">
+                    </span>
+                </form>
+                <ul class="menu">
+                    <li><span>Online(10) <i class="fa fa-chevron-down"></i></span>
+                        <ul>
+                            <li class="online-now">
+                                <img src="images/photos/avatars/min/01.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-before">
+                                <img src="images/photos/avatars/min/02.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-now">
+                                <img src="images/photos/avatars/min/03.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-long">
+                                <img src="images/photos/avatars/min/04.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-long">
+                                <img src="images/photos/avatars/min/05.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-before">
+                                <img src="images/photos/avatars/min/06.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-now">
+                                <img src="images/photos/avatars/min/07.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li class="online-now">
+                                <img src="images/photos/avatars/min/08.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><span>Offline(232) <i class="fa fa-chevron-down"></i></span>
+                        <ul>
+                            <li>
+                                <img src="images/photos/avatars/min/09.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/10.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/11.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/12.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/13.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/14.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/15.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                            <li>
+                                <img src="images/photos/avatars/min/16.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li>
+                                <img src="images/photos/avatars/min/17.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li>
+                                <img src="images/photos/avatars/min/18.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li>
+                                <img src="images/photos/avatars/min/19.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li>
+                                <img src="images/photos/avatars/min/20.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li>
+                                <img src="images/photos/avatars/min/21.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+                           <li>
+                                <img src="images/photos/avatars/min/22.png" width="22" height="22">
+                                <a href="#">Alex Pascal</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+
+            <main></main>
+    </div>
     </body>
 </html>

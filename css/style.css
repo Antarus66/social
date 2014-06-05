@@ -1,8 +1,7 @@
 /*
-  Structure (layout)
   Header
+  Structure (layout)
   Search
-  Navigation
   Headings
   Lists
   Forms
@@ -12,21 +11,6 @@
   Links
   Misc
 */
-
-/*-------------   Structure (layout) ------------*/
-html {
-    background: #1B3B64;
-    font-size: 100.01%;
-}
-
-body {
-    background: #fff;
-    border-radius: 5px;
-    font: 62.5% Arial Helvetica, sans-serif;
-    margin: 80px auto;
-    width: 1254px;
-}
-/*-----------------------------------------------*/
 
 /*------------------- Header --------------------*/
 header {
@@ -38,82 +22,125 @@ header {
     width: 100%;
 }
 
-    .add-entry,
-    .panel {
-        float: right;
-        height: 84px;
-    }
+.add-entry,
+.panel {
+    float: right;
+    height: 84px;
+}
 
-    .add-entry {
-        background: #E76049;
-        font-size: 4.2em;
-        text-align: center;
-        text-decoration: none;
-        width: 84px;
-    }
+.add-entry {
+    background: #E76049;
+    font-size: 4.2em;
+    text-align: center;
+    text-decoration: none;
+    width: 84px;
+}
 
-    .panel {
-        float: right;
-        font-size: 1.3em;
-        margin-right: 30px;
+.panel {
+    float: right;
+    font-size: 1.3em;
+    margin-right: 30px;
 
-    }
+}
 
+.panel a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 0 15px;
+    position: relative;
+}
 
-        .panel a {
-            display: inline-block;
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            padding: 2px;
-            margin: 0 15px;
-            position: relative;
-        }
+.panel span {
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 17px;
+    background: #2EB398;
+    z-index: 2;
+    font-size: 0.9em;
+}
+/*-----------------------------------------------*/
 
-        .panel span {
-            display: block;
-            position: absolute;
-            top: -7px;
-            right: -7px;
-            width: 17px;
-            height: 17px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 17px;
-            background: #2EB398;
-            z-index: 2;
-            font-size: 0.9em;
-        }
+/*-------------   Structure (layout) ------------*/
+html {
+    background: #1B3B64;
+    font-size: 100.01%;
+}
 
+.layout {
+    font: 62.5% Arial Helvetica, sans-serif;
+    margin: 80px auto;
+    width: 1254px;
+    overflow: hidden;
+}
+
+nav,
+aside,
+main {
+    font-size: 1.2em;
+    height: 900px;
+}
+
+nav {
+    width: 200px;
+    float: left;
+    color: #fff;
+    padding: 10px 0;
+}
+
+aside {
+    float: right;
+    width: 225px;
+}
+
+main {
+    background: #fff;
+    border-left: 200px solid #1F282D;
+    border-right: 225px solid #EAEDF1;
+    border-radius: 0 0 5px 5px;
+    height: 1200px;
+}
 /*-----------------------------------------------*/
 
 /*------------------- Search --------------------*/
 .search {
+
     text-align: center;
-    width: 200px;
+    width: 140px;
+    padding: 0 30px;
 }
+
     .search span {
         display: inline-block;
         line-height: 1em;
+        margin-bottom: -0.65em;
+        width: 100%;
+        text-align: left;
     }
 
     .search input {
         background: transparent;
         border: none;
-        color: #fff;
         font-size: 1.3em;
         font-style: italic;
         outline: none;
         padding: 2px 0;
-        width: 120px;
+        width: 85%;
     }
 
     .search button {
-        position: relative;
-        top: -3px;
+        float: right;
         background: none;
         border: none;
         font-size: 1.2em;
@@ -128,18 +155,27 @@ header .search {
         border-bottom: 2px solid #fff;
     }
 
+        header .search input {color: #fff; }
+
         header .search input::-webkit-input-placeholder { color: #fff; }
         header .search input:-moz-placeholder { color: #fff; }
-/*-----------------------------------------------*/
 
-/*------------------ Navigation -----------------*/
-nav {
-    width: 200px;
-    background: #1F282D;
-    font-size: 1.2em;
-    color: #fff;
-    padding: 10px 0;
+
+aside .search {
+    color: #C4CCD8;
+    font-size: 0.86em;
+    padding: 27px 30px;
+    width: 165px;
 }
+
+    aside .search span {
+        border-bottom: 2px solid #C4CCD8;
+    }
+
+        aside .search input { color: #C4CCD8; }
+
+        aside .search input::-webkit-input-placeholder { color: #C4CCD8; }
+        aside .search input:-moz-placeholder { color: #C4CCD8; }
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
@@ -156,53 +192,130 @@ nav {
     .menu > li > span, .menu ul a {
         display: inline-block;
         padding: 13px 30px;
-        width: 140px;
-    }
-
-    .menu .active, .menu ul li:hover {
-        background: #2F373C;
+        position: relative;
     }
 
     .menu > li > span {
-        color: #3C4D57;
         text-transform: uppercase;
         font-weight: bold;
     }
 
-        .menu a span {
-            display: inline-block;
-            float: right;
-            background: #E76049;
-            border-radius: 5px;
-            padding: 3px 6px;
-        }
+        .menu ul a { padding: 12px 30px 12px 60px; }
 
-        .menu > li:nth-child(2) a span {
-            background: #3B454B;
-        }
+            .menu ul a span {
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                margin-top: -11px;
+                display: inline-block;
+                float: right;
+                background: #E76049;
+                border-radius: 5px;
+                padding: 3px 6px;
+            }
 
-        .menu .fa {
-            position: relative;
-            bottom: -1px;
-            font-size: 1.4em;
-            margin-right: 7px;
-        }
+            .menu > li:nth-child(2) a span {
+                background: #3B454B;
+            }
 
-        .menu .cel { color: #F6D346; }
-        .menu .des { color: #E25E48; }
-        .menu .par { color: #2EAF95; }
+                /* Litle avatar 22*22 or icon*/
+                .menu img,
+                .menu ul li .fa {
+                    position: absolute;
+                    top: 50%;
+                    left: 30px;
+                    z-index: 2;
+                }
+
+                .menu img { margin-top: -11px; }
+                .menu ul li .fa {
+                    font-size: 1.4em;
+                    margin-top: -9px;
+                }
+
+
+            .menu .cel { color: #F6D346; }
+            .menu .des { color: #E25E48; }
+            .menu .par { color: #2EAF95; }
+
+/* Nav menu */
+    nav .menu > li > span,
+    nav .menu ul a {
+        width: 110px;
+    }
+
+    nav .menu > li > span {
+        color: #3C4D57;
+    }
+
+    nav .menu .active,
+    nav .menu ul li:hover {
+        background: #2F373C;
+    }
+
+/* Aside menu */
+    aside .menu > li > span { width: 165px; }
+
+    aside .menu ul a { width: 135px; }
+
+    /* Contact on hover */
+    aside .menu ul li a:hover {
+        background: #ddd;
+    }
+
+    /* Elements of first-level menu */
+    aside .menu > li > span {
+        color: #6A7686;
+        font-size: 0.9em;
+        text-align: right;
+    }
+
+    aside .menu li {
+        position: relative;
+    }
+
+    /* Colored or grey circles - online indicators */
+    aside .menu ul li:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        margin-top: -5px;
+        right: 30px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #C4CCD8;
+    }
+
+    aside .menu ul .online-now:after { background: #2EB398; }
+    aside .menu ul .online-before:after { background: #F5B041; }
+    aside .menu ul .online-long:after { background: #E76049; }
+
+
+    aside .menu span i {
+        display: inline-block;
+        border: 2px solid #6A7686;
+        border-radius: 50%;
+        font-size: 0.8em;
+        margin-left: 5px;
+        padding: 1px 2px 2px 2px;
+    }
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
 
-.add-entry:link,    .panel a:link,      nav a:link,
-.add-entry:visited, .panel a:visited,   nav a:visited,
-.add-entry:hover,   .panel a:hover,     nav a:hover,
-.add-entry:active,  .panel a:active,    nav a:active  {
+.add-entry:link,    .panel a:link,      .menu a:link,
+.add-entry:visited, .panel a:visited,   .menu a:visited,
+.add-entry:hover,   .panel a:hover,     .menu a:hover,
+.add-entry:active,  .panel a:active,    .menu a:active  {
     color: #fff;
     text-decoration: none;
 }
 
+aside .menu a:link,
+aside .menu a:visited,
+aside .menu a:hover,
+aside .menu a:active { color: #929ead; }
 
 /*-----------------------------------------------*/
 
