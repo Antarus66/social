@@ -351,32 +351,42 @@ article h4 {
 /*--------------------Forms----------------------*/
 .comment-form {
     color: #6a7686;
-    background: #EAEDF1;
     font-size: 1.1em;
     font-weight: bold;
-    padding: 20px 15px;
 }
 
-.comment-form button {
-    border: none;
-    background: none;
-    padding: 0;
-}
+    .comment-form .comm-panel {
+        background: #EAEDF1;
+        padding: 20px 15px;
+    }
 
-.comment-form button::after {
-    display: inline-block;
-    content: '•';
-    margin: 0 7px 0 10px;
-}
+        .comment-form button {
+            border: none;
+            background: none;
+            padding: 0;
+        }
 
-.comment-form button:last-of-type::after {
-    content: '';
-}
+        .comment-form button::after {
+            display: inline-block;
+            content: '•';
+            margin: 0 7px 0 10px;
+        }
 
-.comment-num {
-    text-decoration: none;
-    float: right;
-}
+        .comment-form button:last-of-type::after {
+            content: '';
+        }
+
+        .comment-num {
+            text-decoration: none;
+            float: right;
+        }
+
+        .comm-inp input {
+            border: none;
+            padding: 20px 15px;
+            width: 334px;
+            outline: none;
+        }
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
@@ -414,6 +424,7 @@ article {
 
     article img {
         margin-left:  -1px;
+        display: block;
     }
 /*-----------------------------------------------*/
 
