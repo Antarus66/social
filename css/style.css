@@ -348,6 +348,37 @@ article h4 {
     }
 /*-----------------------------------------------*/
 
+/*--------------------Forms----------------------*/
+.comment-form {
+    color: #6a7686;
+    background: #EAEDF1;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 20px 15px;
+}
+
+.comment-form button {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.comment-form button::after {
+    display: inline-block;
+    content: '•';
+    margin: 0 7px 0 10px;
+}
+
+.comment-form button:last-of-type::after {
+    content: '';
+}
+
+.comment-num {
+    text-decoration: none;
+    float: right;
+}
+/*-----------------------------------------------*/
+
 /*-------------------- Links --------------------*/
 
 .add-entry:link,    .panel a:link,      .menu a:link,
@@ -363,10 +394,10 @@ aside .menu a:visited,
 aside .menu a:hover,
 aside .menu a:active { color: #929ead; }
 
-.comment-panel a:link,
-.comment-panel a:visited,
-.comment-panel a:hover,
-.comment-panel a:active { color: #6a7686; }
+.comment-form a:link,
+.comment-form a:visited,
+.comment-form a:hover,
+.comment-form a:active { color: #6a7686; }
 
 /*-----------------------------------------------*/
 
@@ -384,21 +415,5 @@ article {
     article img {
         margin-left:  -1px;
     }
-
-
-    .comment-panel {
-        background: #EAEDF1;
-        padding: 20px 15px;
-    }
-
-    .comment-panel a {
-        text-decoration: none;
-        font-size: 1.1em;
-        font-weight: bold;
-    }
-
-        .comment-num {
-            float: right;
-        }
 /*-----------------------------------------------*/
 
