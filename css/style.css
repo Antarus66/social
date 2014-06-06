@@ -192,7 +192,7 @@ aside .search {
 article h4 {
     padding: 15px;
     margin: 0;
-    line-height: 1.6em;
+    line-height: 1.5em;
     font-weight: normal;
 }
 
@@ -357,7 +357,7 @@ article h4 {
 
     .comment-form .comm-panel {
         background: #EAEDF1;
-        padding: 20px 15px;
+        padding: 19px 15px;
     }
 
         .comment-form button {
@@ -381,11 +381,12 @@ article h4 {
             float: right;
         }
 
-        .comm-inp input {
+        .comm-inp textarea {
             border: none;
-            padding: 20px 15px;
+            padding: 16px 15px 12px;
             width: 334px;
             outline: none;
+            resize: none;
         }
 /*-----------------------------------------------*/
 
