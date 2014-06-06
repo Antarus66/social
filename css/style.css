@@ -189,10 +189,17 @@ aside .search {
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
+
+.description h3 {
+    margin: 0;
+    padding: 0;
+    color: #2EB398;
+    font-size: 1em;
+}
+
 article h4 {
     padding: 15px;
     margin: 0;
-    line-height: 1.5em;
     font-weight: normal;
 }
 
@@ -418,6 +425,7 @@ article {
     border-radius: 5px;
     display: inline-block;
     min-height: 100px;
+    line-height: 1.5em;
     margin: 15px;
     vertical-align: top;
     width: 364px;
@@ -446,6 +454,16 @@ article {
             line-height: 52px;
             text-align: center;
             float: right;
+            text-decoration: none;
+        }
+
+    .description {
+        padding: 0 15px 15px;
+    }
+
+        .description time,
+        .description .location {
+            display: block;
         }
 /*-----------------------------------------------*/
 
