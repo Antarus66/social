@@ -85,6 +85,7 @@ body {
 }
 
 .layout {
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -116,6 +117,7 @@ main {
     background: #fff;
     border-left: 200px solid #1F282D;
     border-right: 225px solid #EAEDF1;
+    color: #89949B;
     height: 1200px;
     padding: 15px;
 }
@@ -187,6 +189,42 @@ aside .search {
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
+article h4 {
+    padding: 15px;
+    margin: 0;
+    line-height: 1.6em;
+    font-weight: normal;
+}
+
+    article h4 .avatar {
+        border-radius: 50%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    article h4 .username {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    article h4 .fa,
+    article h4 .time {
+        float: right;
+    }
+
+    article h4 .fa {
+        font-size: 1.3em;
+    }
+
+    article h4 .location,
+    article h4 .time {
+        font-size: 0.9em;
+    }
+
+    article h4 .time {
+        font-weight: bold;
+    }
 /*-----------------------------------------------*/
 
 /*-------------------- Lists --------------------*/
@@ -325,6 +363,11 @@ aside .menu a:visited,
 aside .menu a:hover,
 aside .menu a:active { color: #929ead; }
 
+.comment-panel a:link,
+.comment-panel a:visited,
+.comment-panel a:hover,
+.comment-panel a:active { color: #6a7686; }
+
 /*-----------------------------------------------*/
 
 /*-------------------- Misc ---------------------*/
@@ -337,5 +380,25 @@ article {
     vertical-align: top;
     width: 364px;
 }
+
+    article img {
+        margin-left:  -1px;
+    }
+
+
+    .comment-panel {
+        background: #EAEDF1;
+        padding: 20px 15px;
+    }
+
+    .comment-panel a {
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+        .comment-num {
+            float: right;
+        }
 /*-----------------------------------------------*/
 
