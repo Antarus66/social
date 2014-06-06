@@ -423,9 +423,29 @@ article {
     width: 364px;
 }
 
-    article img {
+    article > img {
         margin-left:  -1px;
         display: block;
     }
+
+    .members {
+        overflow: hidden;
+    }
+
+        .members img,
+        .more-members {
+            float: left;
+
+        }
+
+        .more-members {
+            color: #fff;
+            background: #2EB398;
+            width: 52px;
+            height: 52px;
+            line-height: 52px;
+            text-align: center;
+            float: right;
+        }
 /*-----------------------------------------------*/
 
