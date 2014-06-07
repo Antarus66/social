@@ -211,7 +211,7 @@ article h4 {
     }
 
     article h4 .username {
-        color: #000;
+        color: #40505a;
         font-weight: bold;
         text-decoration: none;
     }
@@ -233,6 +233,18 @@ article h4 {
     article h4 .time {
         font-weight: bold;
     }
+
+
+
+.comment h4 {
+    margin: 0;
+    line-height: 22px;
+}
+
+    .comment h4 .avatar {
+        margin-right: 10px;
+    }
+
 /*-----------------------------------------------*/
 
 /*-------------------- Lists --------------------*/
@@ -357,16 +369,21 @@ article h4 {
 /*-----------------------------------------------*/
 
 /*--------------------Form-----------------------*/
-.comment-form textarea {
-    border: none;
-    padding: 16px 15px 12px;
-    width: 334px;
-    outline: none;
-    resize: none;
+.comment + .comment-form {
+    border-top: 2px solid #EAEDF1;
 }
+
+    .comment-form textarea {
+        border: none;
+        padding: 16px 15px 12px;
+        width: 334px;
+        outline: none;
+        resize: none;
+    }
 /*-----------------------------------------------*/
 
 /*-------------------Panels----------------------*/
+
 .entry-panel {
     background: #EAEDF1;
     padding: 19px 15px;
@@ -375,25 +392,38 @@ article h4 {
     font-weight: bold;
 }
 
-    .entry-panel button {
+    .entry-panel button,
+    .like-panel button {
         border: none;
         background: none;
         padding: 0;
     }
 
-    .entry-panel button::after {
+    .entry-panel button::after,
+    .like-panel button::after {
         display: inline-block;
         content: '•';
         margin: 0 7px 0 10px;
     }
 
-    .entry-panel button:last-of-type::after {
+    .entry-panel button:last-of-type::after,
+    .like-panel button:last-of-type::after {
         content: '';
     }
 
     .comment-num {
         text-decoration: none;
         float: right;
+    }
+
+.like-panel {
+    margin: 0 0 0 35px;
+}
+
+    .like-panel button,
+    .like-panel span {
+        color: #40505a;
+        font-weight:  bold;
     }
 /*-----------------------------------------------*/
 
@@ -468,5 +498,13 @@ article {
     article p {
         margin: 15px;
     }
+
+    .comment {
+        margin: 15px;
+    }
+
+        .comment p {
+            margin: 0 0px 0 35px
+        }
 /*-----------------------------------------------*/
 
