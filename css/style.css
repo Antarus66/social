@@ -198,8 +198,8 @@ aside .search {
 }
 
 article h4 {
-    padding: 15px;
-    margin: 0;
+    padding: 0 15px;
+    margin: 15px 0;
     font-weight: normal;
 }
 
@@ -458,7 +458,8 @@ article {
         }
 
     .description {
-        padding: 0 15px 15px;
+        padding: 0 15px;
+        margin: 15px 0;
     }
 
         .description time,
@@ -467,7 +468,7 @@ article {
         }
 
     article p {
-        margin: 0 0 15px;
+        margin: 15px 0;
         padding: 0 15px;
     }
 /*-----------------------------------------------*/
