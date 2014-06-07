@@ -465,5 +465,10 @@ article {
         .description .location {
             display: block;
         }
+
+    article p {
+        margin: 0 0 15px;
+        padding: 0 15px;
+    }
 /*-----------------------------------------------*/
 
