@@ -357,29 +357,30 @@ article h4 {
 
 /*--------------------Forms----------------------*/
 .comment-form {
-    color: #6a7686;
-    font-size: 1.1em;
-    font-weight: bold;
+
 }
 
-    .comment-form .comm-panel {
+    .entry-panel {
         background: #EAEDF1;
         padding: 19px 15px;
+        color: #6a7686;
+        font-size: 1.1em;
+        font-weight: bold;
     }
 
-        .comment-form button {
+        .entry-panel button {
             border: none;
             background: none;
             padding: 0;
         }
 
-        .comment-form button::after {
+        .entry-panel button::after {
             display: inline-block;
             content: '•';
             margin: 0 7px 0 10px;
         }
 
-        .comment-form button:last-of-type::after {
+        .entry-panel button:last-of-type::after {
             content: '';
         }
 
@@ -412,10 +413,10 @@ aside .menu a:visited,
 aside .menu a:hover,
 aside .menu a:active { color: #929ead; }
 
-.comment-form a:link,
-.comment-form a:visited,
-.comment-form a:hover,
-.comment-form a:active { color: #6a7686; }
+.entry-panel a:link,
+.entry-panel a:visited,
+.entry-panel a:hover,
+.entry-panel a:active { color: #6a7686; }
 
 /*-----------------------------------------------*/
 
