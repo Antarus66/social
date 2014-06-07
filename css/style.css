@@ -198,9 +198,9 @@ aside .search {
 }
 
 article h4 {
-    padding: 15px;
-    margin: 0;
+    margin: 15px;
     font-weight: normal;
+    overflow: hidden;
 }
 
     article h4 .avatar {
@@ -357,7 +357,6 @@ article h4 {
 
 /*--------------------Forms----------------------*/
 .comment-form {
-    color: #6a7686;
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -365,21 +364,22 @@ article h4 {
     .comment-form .comm-panel {
         background: #EAEDF1;
         padding: 19px 15px;
+        color: #6a7686;
     }
 
-        .comment-form button {
+        .comm-panel button {
             border: none;
             background: none;
             padding: 0;
         }
 
-        .comment-form button::after {
+        .comm-panel button::after {
             display: inline-block;
             content: '•';
             margin: 0 7px 0 10px;
         }
 
-        .comment-form button:last-of-type::after {
+        .comm-panel button:last-of-type::after {
             content: '';
         }
 
@@ -395,6 +395,14 @@ article h4 {
             outline: none;
             resize: none;
         }
+
+        .comment {
+            font-size: 0.9em;
+        }
+
+            .comment h4 {
+                line-height: 22px;
+            }
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
@@ -412,10 +420,10 @@ aside .menu a:visited,
 aside .menu a:hover,
 aside .menu a:active { color: #929ead; }
 
-.comment-form a:link,
-.comment-form a:visited,
-.comment-form a:hover,
-.comment-form a:active { color: #6a7686; }
+.comm-panel a:link,
+.comm-panel a:visited,
+.comm-panel a:hover,
+.comm-panel a:active { color: #6a7686; }
 
 /*-----------------------------------------------*/
 
@@ -458,7 +466,7 @@ article {
         }
 
     .description {
-        padding: 0 15px 15px;
+        margin: 15px;
     }
 
         .description time,
@@ -467,8 +475,7 @@ article {
         }
 
     article p {
-        margin: 0 0 15px;
-        padding: 0 15px;
+        margin: 15px;
     }
 /*-----------------------------------------------*/
 
