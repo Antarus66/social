@@ -6,6 +6,7 @@
   Lists
   Forms
     Forms
+    Panels
     Inputs
     Buttons
   Links
@@ -355,47 +356,45 @@ article h4 {
     }
 /*-----------------------------------------------*/
 
-/*--------------------Forms----------------------*/
-.comment-form {
+/*--------------------Form-----------------------*/
+.comment-form textarea {
+    border: none;
+    padding: 16px 15px 12px;
+    width: 334px;
+    outline: none;
+    resize: none;
+}
+/*-----------------------------------------------*/
 
+/*-------------------Panels----------------------*/
+.entry-panel {
+    background: #EAEDF1;
+    padding: 19px 15px;
+    color: #6a7686;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 
-    .entry-panel {
-        background: #EAEDF1;
-        padding: 19px 15px;
-        color: #6a7686;
-        font-size: 1.1em;
-        font-weight: bold;
+    .entry-panel button {
+        border: none;
+        background: none;
+        padding: 0;
     }
 
-        .entry-panel button {
-            border: none;
-            background: none;
-            padding: 0;
-        }
+    .entry-panel button::after {
+        display: inline-block;
+        content: '•';
+        margin: 0 7px 0 10px;
+    }
 
-        .entry-panel button::after {
-            display: inline-block;
-            content: '•';
-            margin: 0 7px 0 10px;
-        }
+    .entry-panel button:last-of-type::after {
+        content: '';
+    }
 
-        .entry-panel button:last-of-type::after {
-            content: '';
-        }
-
-        .comment-num {
-            text-decoration: none;
-            float: right;
-        }
-
-        .comm-inp textarea {
-            border: none;
-            padding: 16px 15px 12px;
-            width: 334px;
-            outline: none;
-            resize: none;
-        }
+    .comment-num {
+        text-decoration: none;
+        float: right;
+    }
 /*-----------------------------------------------*/
 
 /*-------------------- Links --------------------*/
