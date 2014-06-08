@@ -31,7 +31,8 @@ header {
 
 .add-entry {
     background: #E76049;
-    font-size: 4.2em;
+    font-size: 3em;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     width: 84px;
@@ -45,14 +46,14 @@ html {
 }
 
     body {
-        font: 62.5% Arial Helvetica, sans-serif;
-        margin: 80px auto;
-        width: 1255px;
+        font: 62.5% Verdana, sans-serif;
     }
 
         .layout {
-            border-radius: 10px;
+            border-radius: 5px;
             overflow: hidden;
+            margin: 80px auto;
+            width: 1255px;
         }
 
             nav,
@@ -174,6 +175,11 @@ article h4 {
         margin-right: 15px;
     }
 
+    article h4 .username,
+    article h4 .action {
+        color: #40505a;
+    }
+
     article h4 .username {
         color: #40505a;
         font-weight: bold;
@@ -191,7 +197,7 @@ article h4 {
 
     article h4 .location,
     article h4 .time {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     article h4 .time {
@@ -239,6 +245,7 @@ article h4 {
                 margin-top: -11px;
                 display: inline-block;
                 float: right;
+                font-size: 0.9em;
                 background: #E76049;
                 border-radius: 5px;
                 padding: 3px 6px;
@@ -286,7 +293,9 @@ article h4 {
 /* Aside menu */
     aside .menu > li > span { width: 165px; }
 
-    aside .menu ul a { width: 120px; }
+    aside .menu ul a {
+        width: 120px;
+    }
 
     /* Contact on hover */
     aside .menu ul li a:hover {
@@ -346,8 +355,9 @@ article h4 {
     }
 
     .new-form textarea {
-         display: block;
-         height: 30px;
+        padding: 10px;
+        display: block;
+        height: 35px;
      }
 
 
@@ -388,7 +398,7 @@ article h4 {
         line-height: 17px;
         background: #2EB398;
         z-index: 2;
-        font-size: 0.9em;
+        font-size: 0.85em;
     }
 
 
@@ -398,8 +408,8 @@ article h4 {
     background: #EAEDF1;
     padding: 19px 15px;
     color: #6a7686;
-    font-size: 1.1em;
     font-weight: bold;
+    font-size: 1em;
 }
 
     .comment-panel button,
@@ -412,8 +422,10 @@ article h4 {
     .comment-panel button::after,
     .like-panel button::after {
         display: inline-block;
+        position: relative;
         content: '•';
-        margin: 0 7px 0 10px;
+        font-size: 0.8em;
+        margin: 0 5px 0 8px;
     }
 
     .comment-panel button:last-of-type::after,
@@ -471,6 +483,7 @@ article h4 {
         margin-top: -6px;
         text-align: center;
         text-transform: uppercase;
+        font-size: 0.9em;
         float: right;
         text-decoration: none;
     }
@@ -500,7 +513,7 @@ aside .menu a:hover,
 aside .menu a:active { color: #929ead; }
 
 .new-panel a {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-right: 15px;
 }
 /*-----------------------------------------------*/
