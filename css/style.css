@@ -6,6 +6,7 @@
   Lists
   Forms
     Forms
+    Panels
     Inputs
     Buttons
   Links
@@ -23,7 +24,7 @@ header {
 }
 
 .add-entry,
-.panel {
+.quick-panel {
     float: right;
     height: 84px;
 }
@@ -35,41 +36,6 @@ header {
     text-decoration: none;
     width: 84px;
 }
-
-.panel {
-    float: right;
-    font-size: 1.3em;
-    margin-right: 30px;
-
-}
-
-.panel a {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    padding: 2px;
-    margin: 0 15px;
-    position: relative;
-}
-
-.panel span {
-    display: block;
-    position: absolute;
-    top: -7px;
-    right: -7px;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 17px;
-    background: #2EB398;
-    z-index: 2;
-    font-size: 0.9em;
-}
 /*-----------------------------------------------*/
 
 /*-------------   Structure (layout) ------------*/
@@ -78,39 +44,48 @@ html {
     font-size: 100.01%;
 }
 
-.layout {
-    font: 62.5% Arial Helvetica, sans-serif;
-    margin: 80px auto;
-    width: 1254px;
-    overflow: hidden;
-}
+    body {
+        font: 62.5% Arial Helvetica, sans-serif;
+        margin: 80px auto;
+        width: 1255px;
+    }
 
-nav,
-aside,
-main {
-    font-size: 1.2em;
-    height: 900px;
-}
+        .layout {
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
-nav {
-    width: 200px;
-    float: left;
-    color: #fff;
-    padding: 10px 0;
-}
+            nav,
+            aside,
+            main {
+                font-size: 1.2em;
+            }
 
-aside {
-    float: right;
-    width: 225px;
-}
+            nav,
+            aside {
+                z-index: 3;
+            }
 
-main {
-    background: #fff;
-    border-left: 200px solid #1F282D;
-    border-right: 225px solid #EAEDF1;
-    border-radius: 0 0 5px 5px;
-    height: 1200px;
-}
+            nav {
+                width: 200px;
+                float: left;
+                color: #fff;
+                padding: 10px 0;
+            }
+
+            aside {
+                color: #929ead;
+                float: right;
+                width: 225px;
+            }
+
+            main {
+                background: #fff;
+                border-left: 200px solid #1F282D;
+                border-right: 225px solid #EAEDF1;
+                color: #89949B;
+                padding: 15px;
+            }
 /*-----------------------------------------------*/
 
 /*------------------- Search --------------------*/
@@ -172,13 +147,68 @@ aside .search {
         border-bottom: 2px solid #C4CCD8;
     }
 
-        aside .search input { color: #C4CCD8; }
+        aside .search input { color: #929ead; }
 
         aside .search input::-webkit-input-placeholder { color: #C4CCD8; }
         aside .search input:-moz-placeholder { color: #C4CCD8; }
 /*-----------------------------------------------*/
 
 /*------------------ Headings -------------------*/
+
+.description h3 {
+    margin: 0;
+    padding: 0;
+    color: #2EB398;
+    font-size: 1em;
+}
+
+article h4 {
+    margin: 15px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+    article h4 .avatar {
+        border-radius: 50%;
+        float: left;
+        margin-right: 15px;
+    }
+
+    article h4 .username {
+        color: #40505a;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    article h4 .fa,
+    article h4 .time {
+        float: right;
+    }
+
+    article h4 .fa {
+        font-size: 1.3em;
+    }
+
+    article h4 .location,
+    article h4 .time {
+        font-size: 0.9em;
+    }
+
+    article h4 .time {
+        font-weight: bold;
+    }
+
+
+
+.comment h4 {
+    margin: 0;
+    line-height: 22px;
+}
+
+    .comment h4 .avatar {
+        margin-right: 10px;
+    }
+
 /*-----------------------------------------------*/
 
 /*-------------------- Lists --------------------*/
@@ -200,7 +230,7 @@ aside .search {
         font-weight: bold;
     }
 
-        .menu ul a { padding: 12px 30px 12px 60px; }
+        .menu ul a { padding: 12px 45px 12px 60px; }
 
             .menu ul a span {
                 position: absolute;
@@ -241,7 +271,7 @@ aside .search {
 /* Nav menu */
     nav .menu > li > span,
     nav .menu ul a {
-        width: 110px;
+        width: 95px;
     }
 
     nav .menu > li > span {
@@ -256,7 +286,7 @@ aside .search {
 /* Aside menu */
     aside .menu > li > span { width: 165px; }
 
-    aside .menu ul a { width: 135px; }
+    aside .menu ul a { width: 120px; }
 
     /* Contact on hover */
     aside .menu ul li a:hover {
@@ -302,12 +332,164 @@ aside .search {
     }
 /*-----------------------------------------------*/
 
+/*--------------------Form-----------------------*/
+.comment + .comment-form {
+    border-top: 2px solid #EAEDF1;
+}
+
+    form textarea {
+        border: none;
+        padding: 16px 15px 12px;
+        width: 334px;
+        outline: none;
+        resize: none;
+    }
+
+    .new-form textarea {
+         display: block;
+         height: 30px;
+     }
+
+
+/*-----------------------------------------------*/
+
+/*-------------------Panels----------------------*/
+
+/* Quick panel */
+.quick-panel {
+    float: right;
+    font-size: 1.3em;
+    margin-right: 30px;
+
+}
+
+    .quick-panel a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        padding: 2px;
+        margin: 0 15px;
+        position: relative;
+    }
+
+    .quick-panel span {
+        display: block;
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 17px;
+        background: #2EB398;
+        z-index: 2;
+        font-size: 0.9em;
+    }
+
+
+/* Comment panel */
+.comment-panel,
+.new-panel {
+    background: #EAEDF1;
+    padding: 19px 15px;
+    color: #6a7686;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+    .comment-panel button,
+    .like-panel button {
+        border: none;
+        background: none;
+        padding: 0;
+    }
+
+    .comment-panel button::after,
+    .like-panel button::after {
+        display: inline-block;
+        content: '•';
+        margin: 0 7px 0 10px;
+    }
+
+    .comment-panel button:last-of-type::after,
+    .like-panel button:last-of-type::after {
+        content: '';
+    }
+
+    .comment-num {
+        text-decoration: none;
+        float: right;
+    }
+
+
+/* Members panel */
+.members-panel {
+    overflow: hidden;
+}
+
+    .members-panel img,
+    .more-members {
+        float: left;
+
+    }
+
+    .more-members {
+        color: #fff;
+        background: #2EB398;
+        width: 52px;
+        height: 52px;
+        line-height: 52px;
+        text-align: center;
+        float: right;
+        text-decoration: none;
+    }
+
+
+/* Like-panel */
+.like-panel {
+    margin: 0 0 0 35px;
+}
+
+    .like-panel button,
+    .like-panel span {
+        color: #40505a;
+        font-weight:  bold;
+    }
+
+
+    .new-panel button {
+        color: #fff;
+        background: #2EB398;
+        border: none;
+        border-radius: 3px;
+        padding: 7px 15px;
+        margin-top: -6px;
+        text-align: center;
+        text-transform: uppercase;
+        float: right;
+        text-decoration: none;
+    }
+/*-----------------------------------------------*/
+
 /*-------------------- Links --------------------*/
 
-.add-entry:link,    .panel a:link,      .menu a:link,
-.add-entry:visited, .panel a:visited,   .menu a:visited,
-.add-entry:hover,   .panel a:hover,     .menu a:hover,
-.add-entry:active,  .panel a:active,    .menu a:active  {
+.panel a:link,
+.panel a:visited,
+.panel a:hover,
+.panel a:active {
+    color: #6a7686;
+    text-decoration: none;
+}
+
+.add-entry:link,    .quick-panel a:link,      .menu a:link,     .members-panel a:link,
+.add-entry:visited, .quick-panel a:visited,   .menu a:visited,  .members-panel a:visited,
+.add-entry:hover,   .quick-panel a:hover,     .menu a:hover,    .members-panel a:hover,
+.add-entry:active,  .quick-panel a:active,    .menu a:active,   .members-panel a:active {
     color: #fff;
     text-decoration: none;
 }
@@ -317,8 +499,48 @@ aside .menu a:visited,
 aside .menu a:hover,
 aside .menu a:active { color: #929ead; }
 
+.new-panel a {
+    font-size: 1.2em;
+    margin-right: 15px;
+}
 /*-----------------------------------------------*/
 
 /*-------------------- Misc ---------------------*/
+article {
+    border: 2px solid #EAEDF1;
+    border-radius: 5px;
+    display: inline-block;
+    min-height: 100px;
+    line-height: 1.5em;
+    margin: 15px;
+    vertical-align: top;
+    width: 364px;
+}
+
+    article > img {
+        margin-left:  -1px;
+        display: block;
+    }
+
+    .description {
+        margin: 15px;
+    }
+
+        .description time,
+        .description .location {
+            display: block;
+        }
+
+    article p {
+        margin: 15px;
+    }
+
+    .comment {
+        margin: 15px;
+    }
+
+        .comment p {
+            margin: 0 0px 0 35px
+        }
 /*-----------------------------------------------*/
 

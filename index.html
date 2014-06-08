@@ -6,40 +6,49 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/masonry.pkgd.js"></script>
+        <script>
+            var container = document.querySelector('#container');
+            var msnry = new Masonry( container, {
+                // options
+
+                itemSelector: '#container article'
+            });
+        </script>
     </head>
     <body>
-    <div class="layout">
-        <header>
-            <a href="#" class="add-entry">+</a>
-            <div class="panel">
-                <a href="#"><i class="fa fa-comments-o fa-lg"></i></a>
-                <a href="#"><i class="fa fa-bell-o fa-lg"></i><span>5</span></a>
-                <a href="#"><i class="fa fa-cog fa-lg"></i></a>
-                <!--
-                <a href="#" class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-cog fa-stack-1x"></i>
-                </a>
-                <a href="#" class="fa-stack fa-lg">
-                    <span>5</span>
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-bell-o fa-stack-1x"></i>
-                </a>
-                <a href="#" class="fa-stack fa-lg">
-                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-                    <i class="fa fa-comments-o fa-stack-1x"></i>
-                </a>
-                -->
-            </div>
-            <form name="site-search" class="search" action="#" method="get">
-                <span>
-                    <button type="submit"><i class="fa fa-search fa-lg"></i></button>
-                    <input type="text" name="query" placeholder="Search all...">
+        <div class="layout">
+            <header>
+                <a href="#" class="add-entry">+</a>
+                <div class="panel quick-panel">
+                    <a href="#"><i class="fa fa-comments-o fa-lg"></i></a>
+                    <a href="#"><i class="fa fa-bell-o fa-lg"></i><span>5</span></a>
+                    <a href="#"><i class="fa fa-cog fa-lg"></i></a>
+                    <!--
+                    <a href="#" class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-cog fa-stack-1x"></i>
+                    </a>
+                    <a href="#" class="fa-stack fa-lg">
+                        <span>5</span>
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-bell-o fa-stack-1x"></i>
+                    </a>
+                    <a href="#" class="fa-stack fa-lg">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-comments-o fa-stack-1x"></i>
+                    </a>
+                    -->
+                </div>
+                <form name="site-search" class="search" action="#" method="get">
+                    <span>
+                        <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+                        <input type="text" name="query" placeholder="Search all...">
 
-                </span>
-            </form>
+                    </span>
+                </form>
 
-        </header>
+            </header>
 
             <nav>
                 <ul class="menu">
@@ -65,6 +74,7 @@
                             <li><a href="#"><i class="fa fa-circle-thin fa-fw cel"></i> Celebrities</a></li>
                             <li><a href="#"><i class="fa fa-circle-thin fa-fw des"></i> Designers</a></li>
                             <li><a href="#"><i class="fa fa-circle-thin fa-fw par"></i> Party Trips</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -81,36 +91,36 @@
                     <li><span>Online(10) <i class="fa fa-chevron-down"></i></span>
                         <ul>
                             <li class="online-now">
-                                <img src="images/photos/avatars/min/01.png" width="22" height="22">
+                                <img src="images/avatars/min/01.png" width="22" height="22">
                                 <a href="#">Alex Pascal</a>
                             </li>
                            <li class="online-before">
-                                <img src="images/photos/avatars/min/02.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/02.png" width="22" height="22">
+                                <a href="#">Bendjamin De Cock</a>
                             </li>
                            <li class="online-now">
-                                <img src="images/photos/avatars/min/03.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/03.png" width="22" height="22">
+                                <a href="#">Bill S Kenney</a>
                             </li>
                            <li class="online-long">
-                                <img src="images/photos/avatars/min/04.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/04.png" width="22" height="22">
+                                <a href="#">Charly Waite</a>
                             </li>
                            <li class="online-long">
-                                <img src="images/photos/avatars/min/05.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/05.png" width="22" height="22">
+                                <a href="#">Dan Cederholm</a>
                             </li>
                            <li class="online-before">
-                                <img src="images/photos/avatars/min/06.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/06.png" width="22" height="22">
+                                <a href="#">Eddie Lobanovsky</a>
                             </li>
                            <li class="online-now">
-                                <img src="images/photos/avatars/min/07.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/07.png" width="22" height="22">
+                                <a href="#">Eric Hoffman</a>
                             </li>
                            <li class="online-now">
-                                <img src="images/photos/avatars/min/08.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/08.png" width="22" height="22">
+                                <a href="#">Jeremy Sall&#233;e</a>
                             </li>
                         </ul>
                     </li>
@@ -118,68 +128,193 @@
                     <li><span>Offline(232) <i class="fa fa-chevron-down"></i></span>
                         <ul>
                             <li>
-                                <img src="images/photos/avatars/min/09.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/09.png" width="22" height="22">
+                                <a href="#">Racquel Parrado</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/10.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/10.png" width="22" height="22">
+                                <a href="#">Rebecka Haglund</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/11.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/11.png" width="22" height="22">
+                                <a href="#">Louise &#214;stvik</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/12.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/12.png" width="22" height="22">
+                                <a href="#">Meagan Fisher</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/13.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/13.png" width="22" height="22">
+                                <a href="#">Konstantin Dats</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/14.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/14.png" width="22" height="22">
+                                <a href="#">Shaun Moynihan</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/15.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/15.png" width="22" height="22">
+                                <a href="#">Jessica Hische</a>
                             </li>
                             <li>
-                                <img src="images/photos/avatars/min/16.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/16.png" width="22" height="22">
+                                <a href="#">Dana Tanamachi</a>
                             </li>
                            <li>
-                                <img src="images/photos/avatars/min/17.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/17.png" width="22" height="22">
+                                <a href="#">Jonathan Moreira</a>
                             </li>
                            <li>
-                                <img src="images/photos/avatars/min/18.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/18.png" width="22" height="22">
+                                <a href="#">Bobby McKenna</a>
                             </li>
                            <li>
-                                <img src="images/photos/avatars/min/19.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/19.png" width="22" height="22">
+                                <a href="#">Claire Coullon</a>
                             </li>
                            <li>
-                                <img src="images/photos/avatars/min/20.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/20.png" width="22" height="22">
+                                <a href="#">Tobias van Schnman</a>
                             </li>
                            <li>
-                                <img src="images/photos/avatars/min/21.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/21.png" width="22" height="22">
+                                <a href="#">Jon Contino</a>
                             </li>
                            <li>
-                                <img src="images/photos/avatars/min/22.png" width="22" height="22">
-                                <a href="#">Alex Pascal</a>
+                                <img src="images/avatars/min/22.png" width="22" height="22">
+                                <a href="#">Mickael Eidenberg</a>
                             </li>
-
                         </ul>
                     </li>
                 </ul>
             </aside>
 
-            <main></main>
-    </div>
+            <main>
+                <div id="container" class="js-masonry">
+
+                    <article class="new">
+                        <form name="new-form" class="new-form" method="post" action="#">
+                            <textarea name="mew-entry" rows="1" placeholder="Write something... "></textarea>
+                        </form>
+                        <div class="panel new-panel">
+                            <a href="#" class="fa fa-map-marker fa-fw"></a>
+                            <a href="#" class="fa fa-photo fa-fw"></a>
+                            <a href="#" class="fa fa-calendar fa-fw"></a>
+                            <a href="#" class="fa fa-video-camera fa-fw"></a>
+                            <button type="submit" form="new-form" name="submit">Send</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h4>
+                            <a href="#" class="username">
+                                <img class="avatar" src="images/avatars/mid/3.png" width="36" height="36">Trent Walton
+                            </a>
+                            <span class="fa fa-anchor fa-fw"></span><br>
+                            <span class="location">Austin, USA</span><span class="time">2 hous ago</span>
+                        </h4>
+                        <img src="images/ship.jpg" width="366" height="366">
+                        <div class="panel comment-panel">
+                            <button name="admire" type="button">Admire</button>
+                            <button name="submit" form="comment-form" type="submit">Comment</button>
+                            <a href="#" class="comment-num">523 people admire this.</a>
+                        </div>
+
+                        <form class="comment-form" method="post" action="#">
+                            <textarea name="comment" rows="1" placeholder="Write a comment..."></textarea>
+                        </form>
+                    </article>
+
+                    <article>
+                        <h4>
+                            <a href="#" class="username">
+                                <img class="avatar" src="images/avatars/mid/2.png" width="36" height="36"> Cederholm
+                            </a>
+                            <span class="fa fa-sun-o fa-fw"></span><br>
+                            <span class="location">Salem, USA</span><span class="time">5 hous ago</span>
+                        </h4>
+                        <img src="images/house.jpg" width="366" height="366">
+
+                        <div class="panel comment-panel">
+                            <button name="admire" type="button">Admire</button>
+                            <button name="submit" form="comment-form"  type="submit">Comment</button>
+                            <a href="#" class="comment-num">228 people admire this.</a>
+                        </div>
+
+                        <form class="comment-form" method="post" action="#">
+                            <textarea name="comment" rows="1" placeholder="Write a comment..."></textarea>
+                        </form>
+                    </article>
+
+                    <article>
+                        <h4>
+                            <a href="#" class="username">
+                                <img class="avatar" src="images/avatars/mid/3.png" width="36" height="36">Trent Walton
+                            </a> created an event
+                            <span class="fa fa-calendar fa-fw"></span><br>
+                            <span class="location">Austin, USA</span><span class="time">3 hous ago</span>
+                        </h4>
+                        <div class="description">
+                            <h3>Birthday party on my yacht in New York.</h3>
+                            <time>July 10 at 10:00pm</time>
+                            <span class="location">New York, USA</span>
+                        </div>
+                        <img src="images/map.jpg" width="365" height="250">
+                        <div class="panel members-panel">
+                            <a href="#"><img src="images/avatars/big/1.jpg" width="52" height="52"></a>
+                            <a href="#"><img src="images/avatars/big/2.jpg" width="52" height="52"></a>
+                            <a href="#"><img src="images/avatars/big/3.jpg" width="52" height="52"></a>
+                            <a href="#"><img src="images/avatars/big/4.jpg" width="52" height="52"></a>
+                            <a href="#"><img src="images/avatars/big/5.jpg" width="52" height="52"></a>
+                            <a href="#"><img src="images/avatars/big/6.jpg" width="52" height="52"></a>
+                            <a href="#" class="more-members">+26</a>
+                        </div>
+
+                        <div class="panel comment-panel">
+                            <button name="admire" type="button">Admire</button>
+                            <button name="submit" form="comment-form" type="submit">Comment</button>
+                            <a href="#" class="comment-num">633 people admire this.</a>
+                        </div>
+
+                        <form class="comment-form" method="post" action="#">
+                            <textarea name="comment" rows="1" placeholder="Write a comment..."></textarea>
+                        </form>
+                    </article>
+
+                    <article>
+                        <h4>
+                            <a href="#" class="username">
+                                <img class="avatar" src="images/avatars/mid/1.png" width="36" height="36">Julien Renvoye
+                            </a>
+                            <span class="fa fa-edit fa-fw"></span><br>
+                            <span class="location">San Francisco, USA</span><span class="time">3 hous ago</span>
+                        </h4>
+                        <p>Anyone here want to hitchhike in the Galaxy? I would love to be able to see the milkyway.</p>
+
+                        <div class="panel comment-panel">
+                            <button name="admire" type="button">Admire</button>
+                            <button name="submit" form="comment-form" type="submit">Comment</button>
+                            <a href="#" class="comment-num">10 people admire this.</a>
+                        </div>
+
+                        <div class="comment">
+                            <h4>
+                                <a href="#" class="username">
+                                    <img class="avatar" src="images/avatars/min/23.png" width="22" height="22">Victor Erohin
+                                </a>
+                                <span class="time">3 hous ago</span>
+                            </h4>
+                            <p>I would like to join, but are you able to wait a couple of weeks? Sounds cool.</p>
+                            <div class="panel like-panel">
+                                <button type="button" name="like">Like</button>
+                                <button type="button" name="likers">32</button>
+                            </div>
+                        </div>
+                        <form class="comment-form" method="post" action="#">
+                            <textarea name="comment" rows="1" placeholder="Write a comment..."></textarea>
+                        </form>
+                    </article>
+                </div>
+            </main>
+        </div>
     </body>
 </html>
