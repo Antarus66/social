@@ -31,6 +31,7 @@ header {
 
 .add-entry {
     background: #E76049;
+    font-family: "Verdana", serif;
     font-size: 3em;
     font-weight: bold;
     text-align: center;
@@ -41,12 +42,12 @@ header {
 
 /*-------------   Structure (layout) ------------*/
 html {
-    background: #1B3B64;
+    background: #1B3B64 url("../images/blurry_blue_background-normal.jpg") center fixed;
     font-size: 100.01%;
 }
 
     body {
-        font: 62.5% Verdana, sans-serif;
+            font: 62.5% 'Cabin', sans-serif;
     }
 
         .layout {
@@ -59,7 +60,7 @@ html {
             nav,
             aside,
             main {
-                font-size: 1.2em;
+                font-size: 1.35em;
             }
 
             nav,
@@ -139,7 +140,7 @@ header .search {
 
 aside .search {
     color: #C4CCD8;
-    font-size: 0.86em;
+    font-size: 0.75em;
     padding: 27px 30px;
     width: 165px;
 }
