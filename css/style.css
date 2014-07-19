@@ -290,6 +290,7 @@ article h4 {
 
     nav .menu > li > span {
         color: #3C4D57;
+        font-size: 0.8em;
     }
 
     nav .menu .active,
@@ -298,7 +299,12 @@ article h4 {
     }
 
 /* Aside menu */
-    aside .menu > li > span { width: 165px; }
+    aside .menu > li > span {
+        width: 165px;
+        font-size: 0.8em;
+        color: #6A7686;
+        text-align: right;
+    }
 
     aside .menu ul a {
         width: 120px;
@@ -307,13 +313,6 @@ article h4 {
     /* Contact on hover */
     aside .menu ul li a:hover {
         background: #ddd;
-    }
-
-    /* Elements of first-level menu */
-    aside .menu > li > span {
-        color: #6A7686;
-        font-size: 0.9em;
-        text-align: right;
     }
 
     aside .menu li {
