@@ -165,7 +165,11 @@ aside .search {
 }
 
 article h4 {
-    margin: 15px;
+    border: 2px solid #EAEDF1;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    padding: 15px;
+    margin: 0;
     font-weight: normal;
     overflow: hidden;
 }
@@ -210,6 +214,8 @@ article h4 {
 .comment h4 {
     margin: 0;
     line-height: 22px;
+    border: none;
+    padding-bottom: 0;
 }
 
     .comment h4 .avatar {
@@ -343,6 +349,11 @@ article h4 {
 /*-----------------------------------------------*/
 
 /*--------------------Form-----------------------*/
+.comment-form {
+    border: 2px solid #EAEDF1;
+    border-radius: 0 0 5px 5px;
+}
+
 .comment + .comment-form {
     border-top: 2px solid #EAEDF1;
 }
@@ -350,7 +361,8 @@ article h4 {
     form textarea {
         border: none;
         padding: 16px 15px 12px;
-        width: 334px;
+        width: 100%;
+        box-sizing: border-box;
         outline: none;
         resize: none;
     }
@@ -358,7 +370,9 @@ article h4 {
     .new-form textarea {
         padding: 10px;
         display: block;
-        height: 35px;
+        height: 60px;
+        border: 2px solid #EAEDF1;
+        border-radius: 5px 5px 0 0;
      }
 
 
@@ -413,6 +427,10 @@ article h4 {
     font-size: 1em;
 }
 
+.new-panel {
+    border-radius: 0 0 5px 5px;
+}
+
     .comment-panel button,
     .like-panel button {
         border: none;
@@ -465,7 +483,7 @@ article h4 {
 
 /* Like-panel */
 .like-panel {
-    margin: 0 0 0 35px;
+    margin: 0 0 0 50px;
 }
 
     .like-panel button,
@@ -521,18 +539,16 @@ aside .menu a:active { color: #929ead; }
 
 /*-------------------- Misc ---------------------*/
 article {
-    border: 2px solid #EAEDF1;
     border-radius: 5px;
     display: inline-block;
     min-height: 100px;
     line-height: 1.5em;
     margin: 15px;
     vertical-align: top;
-    width: 364px;
+    width: 366px;
 }
 
     article > img {
-        margin-left:  -1px;
         display: block;
     }
 
@@ -549,12 +565,27 @@ article {
         margin: 15px;
     }
 
+    article > p,
+    .description,
     .comment {
-        margin: 15px;
+        padding: 15px;
+        margin: 0;
+        border-left: 2px solid #EAEDF1;
+        border-right: 2px solid #EAEDF1;
+    }
+
+    article > p,
+    .description {
+        padding-top: 0;
+    }
+
+    .comment {
+        padding: 0;
+        padding-bottom: 15px;
     }
 
         .comment p {
-            margin: 0 0px 0 35px
+            margin: 0 0px 0 50px
         }
 /*-----------------------------------------------*/
 
