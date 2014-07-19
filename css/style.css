@@ -41,7 +41,7 @@ header {
 
 /*-------------   Structure (layout) ------------*/
 html {
-    background: #1B3B64;
+    background: #1B3B64 url("../images/blurry_blue_background-normal.jpg") center fixed;
     font-size: 100.01%;
 }
 
